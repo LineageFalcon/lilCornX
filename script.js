@@ -24,7 +24,6 @@ function createItems(range, pos, canvas, item) {
   }
 };
 
-item.style.height = "30px";
 item.style.x = "0px";
 item.style.y = "50%";
 
@@ -42,7 +41,7 @@ function getWidth() {
 function fly(item, range = -30, counter = 0) {
   let pos = startP +(Math.sin(range*freq)*amp*1);
   let canvas = document.getElementById("canvas");
-  item.style.y = pos;
+  item.style.y = pos-35;
   item.style.x = range;
   item.style.zIndex = 1000;
   
