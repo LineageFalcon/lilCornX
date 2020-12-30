@@ -1,0 +1,40 @@
+body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: system-ui;
+  background: #f06d06;
+  color: transparent;
+  text-align: center;
+}
+
+svg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: grey;
+  z-index: 1;
+}
+
+#animation {
+  position: relative;
+  fill: white;
+  stroke: white;
+  stroke-width: 1px;
+  stroke-radius: 5px;
+  fill-opacity: 50%;
+  x: 100px;
+  transition: 50ms;
+}
+
+rect {
+  height: 90px;
+  width: 30px;
+  position: absolute;
+  stroke: black;
+  stroke-width: 1px;
+}
